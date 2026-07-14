@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI副業スタートラボ</title>
+    <link>https://vbaarchitecttool-wq.github.io/</link>
+    <description>AI副業、有料note作成、アフィリエイトサイト運営を初心者向けに解説する実践ガイドです。</description>
+    <language>ja</language>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0900</lastBuildDate>
+    <item>
+      <title>ChatGPTだけで稼げない理由</title>
+      <link>https://vbaarchitecttool-wq.github.io/chatgpt-not-enough.html</link>
+      <guid>https://vbaarchitecttool-wq.github.io/chatgpt-not-enough.html</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>AIで有料noteを作る手順</title>
+      <link>https://vbaarchitecttool-wq.github.io/ai-note-guide.html</link>
+      <guid>https://vbaarchitecttool-wq.github.io/ai-note-guide.html</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>SIRIUSでアフィリエイトサイトを作る流れ</title>
+      <link>https://vbaarchitecttool-wq.github.io/sirius-affiliate-site.html</link>
+      <guid>https://vbaarchitecttool-wq.github.io/sirius-affiliate-site.html</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>

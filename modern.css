@@ -401,6 +401,202 @@ article {
   line-height: 1.75;
 }
 
+#text1.modern-home-content {
+  max-width: none;
+}
+
+#text1.modern-home-content > p {
+  max-width: 72ch;
+}
+
+.modern-home-lead {
+  display: grid;
+  gap: 22px;
+  margin: 0 0 34px;
+  padding: clamp(22px, 4vw, 34px);
+  border: 1px solid #cfe2ec;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--modern-soft), #fff);
+}
+
+.modern-home-lead-media {
+  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.85fr);
+  align-items: center;
+}
+
+#main .modern-home-lead h3,
+#main .modern-home-section h3,
+#main .modern-category-section h3 {
+  margin: 0 0 12px;
+  padding: 0;
+  color: var(--modern-ink);
+  background: none;
+  border: 0;
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+  line-height: 1.35;
+}
+
+#main .modern-home-lead h3 {
+  font-size: clamp(1.55rem, 3.2vw, 2.35rem);
+}
+
+.modern-home-lead p {
+  max-width: 68ch;
+  margin: 0;
+  color: var(--modern-muted);
+}
+
+.modern-home-photo {
+  margin: 0;
+}
+
+.modern-home-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modern-home-section,
+.modern-category-section {
+  margin: 34px 0;
+}
+
+.modern-article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.modern-article-card {
+  display: block;
+  min-height: 100%;
+  padding: 18px;
+  border: 1px solid var(--modern-line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--modern-ink);
+  text-decoration: none;
+}
+
+.modern-article-card:hover {
+  border-color: var(--modern-brand-2);
+  background: #f9fcfd;
+}
+
+.modern-article-card strong {
+  display: block;
+  margin: 0 0 7px;
+  color: var(--modern-brand);
+  font-size: 1.06rem;
+  line-height: 1.55;
+}
+
+.modern-article-card span {
+  display: block;
+  color: var(--modern-muted);
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.modern-article-card .modern-meta {
+  margin-bottom: 8px;
+  color: #5d6b7a;
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.modern-ranked-list {
+  counter-reset: modern-rank;
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modern-ranked-list li {
+  counter-increment: modern-rank;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.modern-ranked-list li::before {
+  display: none;
+}
+
+.modern-ranked-list a {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  padding: 14px 16px;
+  border: 1px solid var(--modern-line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--modern-ink);
+  text-decoration: none;
+}
+
+.modern-ranked-list a::before {
+  content: counter(modern-rank);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--modern-brand);
+  color: #fff;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.modern-ranked-list a:hover {
+  border-color: var(--modern-brand-2);
+  background: #f9fcfd;
+}
+
+.modern-ranked-list strong {
+  display: block;
+  margin: 0 0 4px;
+  color: var(--modern-brand);
+  line-height: 1.55;
+}
+
+.modern-ranked-list span {
+  display: block;
+  color: var(--modern-muted);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.modern-category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modern-category-grid a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 7px 14px;
+  border: 1px solid var(--modern-line);
+  border-radius: 999px;
+  background: var(--modern-soft);
+  color: var(--modern-brand);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.modern-category-grid a:hover {
+  border-color: var(--modern-brand-2);
+  background: #fff;
+}
+
 #whatsnew {
   margin-top: 22px;
   padding: 18px 22px;
@@ -549,6 +745,22 @@ article {
 
   .modern-start {
     padding: 18px;
+  }
+
+  .modern-home-lead {
+    padding: 20px 16px;
+  }
+
+  .modern-home-lead-media {
+    grid-template-columns: 1fr;
+  }
+
+  .modern-ranked-list a {
+    grid-template-columns: 36px minmax(0, 1fr);
+  }
+
+  .modern-home-photo img {
+    aspect-ratio: 16 / 10;
   }
 }
 
