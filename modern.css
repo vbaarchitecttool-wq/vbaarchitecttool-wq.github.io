@@ -65,20 +65,30 @@ img {
 }
 
 #top {
+  display: block !important;
   position: relative;
-  overflow: hidden;
-  min-height: 0;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible;
   background: var(--modern-brand);
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  table-layout: auto;
+  text-align: left;
+}
+
+#top::before,
+#top::after {
+  display: none !important;
 }
 
 #top .inner {
   width: min(1120px, calc(100% - 32px));
   max-width: none;
   margin: 0 auto;
-  padding: clamp(38px, 7vw, 78px) 0 clamp(32px, 6vw, 62px);
-  display: block;
+  padding: clamp(36px, 5.5vw, 62px) 0 clamp(34px, 5vw, 56px);
+  display: block !important;
+  height: auto !important;
   position: relative;
   left: auto;
   right: auto;
@@ -89,15 +99,16 @@ img {
 #top h1 {
   display: block;
   width: 100%;
-  max-width: 760px;
+  max-width: 980px;
   margin: 0;
   color: #fff;
-  font-size: clamp(2rem, 4.4vw, 4rem);
-  line-height: 1.08;
+  font-size: clamp(1.9rem, 3.35vw, 3.15rem);
+  line-height: 1.18;
   letter-spacing: 0;
   text-align: left;
   text-wrap: balance;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  line-break: strict;
   white-space: normal;
 }
 
@@ -105,17 +116,19 @@ img {
 #top h2.title {
   display: block;
   width: 100%;
-  max-width: 760px;
-  margin: 18px 0 0;
+  max-width: 980px;
+  margin: 14px 0 0;
   color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(1rem, 2.2vw, 1.35rem);
-  line-height: 1.7;
+  font-size: clamp(0.98rem, 1.65vw, 1.25rem);
+  line-height: 1.65;
   font-weight: 600;
   background: none;
   border: 0;
   padding: 0;
   text-align: left;
   overflow: visible;
+  text-wrap: balance;
+  line-break: strict;
   white-space: normal;
 }
 
