@@ -556,6 +556,7 @@ article {
 .modern-ranked-list a::before {
   content: counter(modern-rank);
   display: inline-flex;
+  grid-row: 1 / span 2;
   align-items: center;
   justify-content: center;
   width: 32px;
@@ -574,6 +575,8 @@ article {
 
 .modern-ranked-list strong {
   display: block;
+  grid-column: 2;
+  min-width: 0;
   margin: 0 0 4px;
   color: var(--modern-brand);
   line-height: 1.55;
@@ -581,6 +584,8 @@ article {
 
 .modern-ranked-list span {
   display: block;
+  grid-column: 2;
+  min-width: 0;
   color: var(--modern-muted);
   font-size: 0.94rem;
   line-height: 1.7;
