@@ -78,19 +78,34 @@ img {
   max-width: none;
   margin: 0 auto;
   padding: clamp(38px, 7vw, 78px) 0 clamp(32px, 6vw, 62px);
+  display: block;
+  position: relative;
+  left: auto;
+  right: auto;
+  text-align: left;
+  overflow: visible;
 }
 
 #top h1 {
+  display: block;
+  width: 100%;
+  max-width: 760px;
   margin: 0;
   color: #fff;
-  font-size: clamp(2.05rem, 5.2vw, 4.8rem);
+  font-size: clamp(2rem, 4.4vw, 4rem);
   line-height: 1.08;
   letter-spacing: 0;
+  text-align: left;
   text-wrap: balance;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 #top h2,
 #top h2.title {
+  display: block;
+  width: 100%;
+  max-width: 760px;
   margin: 18px 0 0;
   color: rgba(255, 255, 255, 0.9);
   font-size: clamp(1rem, 2.2vw, 1.35rem);
@@ -99,12 +114,16 @@ img {
   background: none;
   border: 0;
   padding: 0;
+  text-align: left;
+  overflow: visible;
+  white-space: normal;
 }
 
 #top h2 span {
   display: inline;
   padding: 0;
   background: none;
+  white-space: normal;
 }
 
 #top h2 a,
